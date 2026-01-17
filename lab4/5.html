@@ -1,0 +1,12 @@
+<input id="n">
+<button onclick="sum()">Find</button>
+<p id="out"></p>
+
+<script>
+function sum() {
+  let n = document.getElementById("n").value;
+  let s = 0;
+  for (let d of n) s += Number(d);
+  document.getElementById("out").innerText = s;
+}
+</script>

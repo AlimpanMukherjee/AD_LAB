@@ -1,0 +1,11 @@
+<input id="age">
+<button onclick="vote()">Check</button>
+<p id="out"></p>
+
+<script>
+function vote() {
+  let age = Number(document.getElementById("age").value);
+  document.getElementById("out").innerText =
+    age >= 18 ? "Eligible for voting" : "Not eligible";
+}
+</script>

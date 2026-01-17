@@ -1,0 +1,12 @@
+<input id="a">
+<input id="b">
+<button onclick="add()">Add</button>
+<p id="out"></p>
+
+<script>
+function add() {
+  let a = Number(document.getElementById("a").value);
+  let b = Number(document.getElementById("b").value);
+  document.getElementById("out").innerText = a + b;
+}
+</script>

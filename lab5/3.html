@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment-3</title>
+</head>
+<body>
+
+<h2>Array Manipulation</h2>
+
+<p>Enter a value to add:</p>
+<input type="text" id="valueInput">
+<button onclick="addValue()">Add Value to Array</button>
+
+<p>Perform Operations:</p>
+<button onclick="pushValue()">Push (Add to End)</button><br><br>
+<button onclick="popValue()">Pop (Remove from End)</button><br><br>
+<button onclick="shiftValue()">Shift (Remove from Start)</button><br><br>
+<button onclick="unshiftValue()">Unshift (Add to Start)</button>
+
+<p id="output"></p>
+
+<script>
+    let arr = [];
+
+    function addValue() {
+        let val = document.getElementById("valueInput").value;
+        arr.push(val);
+        displayArray();
+    }
+
+    function pushValue() {
+        let val = document.getElementById("valueInput").value;
+        arr.push(val);
+        displayArray();
+    }
+
+    function popValue() {
+        arr.pop();
+        displayArray();
+    }
+
+    function shiftValue() {
+        arr.shift();
+        displayArray();
+    }
+
+    function unshiftValue() {
+        let val = document.getElementById("valueInput").value;
+        arr.unshift(val);
+        displayArray();
+    }
+
+    function displayArray() {
+        document.getElementById("output").innerHTML = "Array: " + arr;
+    }
+</script>
+
+</body>
+</html>

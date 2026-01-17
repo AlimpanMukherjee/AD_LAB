@@ -1,0 +1,11 @@
+<input id="n">
+<button onclick="rev()">Reverse</button>
+<p id="out"></p>
+
+<script>
+function rev() {
+  let n = document.getElementById("n").value;
+  document.getElementById("out").innerText =
+    n.split("").reverse().join("");
+}
+</script>

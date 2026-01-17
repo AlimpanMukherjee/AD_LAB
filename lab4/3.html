@@ -1,0 +1,12 @@
+<input id="n">
+<button onclick="pal()">Check</button>
+<p id="out"></p>
+
+<script>
+function pal() {
+  let s = document.getElementById("n").value;
+  let r = s.split("").reverse().join("");
+  document.getElementById("out").innerText =
+    s == r ? "Palindrome" : "Not Palindrome";
+}
+</script>

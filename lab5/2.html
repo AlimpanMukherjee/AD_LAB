@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question-2</title>
+</head>
+<body>
+
+<h2>Enter your name and see it added to the list!</h2>
+
+<input type="text" id="nameInput">
+<button onclick="addName()">Add Name</button>
+
+<p id="output"></p>
+
+<script>
+    let names = [];
+
+    function addName() {
+        let name = document.getElementById("nameInput").value;
+        names.push(name);
+
+        let text = "Names entered: ";
+        for (let i = 0; i < names.length; i++) {
+            text += names[i];
+            if (i < names.length - 1) {
+                text += ", ";
+            }
+        }
+
+        document.getElementById("output").innerHTML = text;
+        document.getElementById("nameInput").value = "";
+    }
+</script>
+
+</body>
+</html>

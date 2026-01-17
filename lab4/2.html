@@ -1,0 +1,15 @@
+<input id="n">
+<button onclick="prime()">Check</button>
+<p id="out"></p>
+
+<script>
+function prime() {
+  let n = Number(document.getElementById("n").value);
+  let flag = n > 1;
+  for (let i = 2; i < n; i++)
+    if (n % i == 0) flag = false;
+
+  document.getElementById("out").innerText =
+    flag ? "Prime" : "Not Prime";
+}
+</script>
