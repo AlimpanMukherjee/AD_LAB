@@ -1,0 +1,18 @@
+/* footer.css: external CSS only for footer */
+
+#footerBox {
+    background-color: #222;
+    color: #ddd;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#footerBox a {
+    color: #99ccff;
+    margin: 0 5px;
+}
+
+#footerBox a:hover {
+    color: #ffffff;
+}
